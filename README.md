@@ -1,1 +1,1 @@
-# odin-resturant-page-webpack
+# odin-restaurant-page-webpack
