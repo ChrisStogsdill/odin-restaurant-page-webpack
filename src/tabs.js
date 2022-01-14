@@ -8,9 +8,10 @@ tabContainer.id = 'tab-container'
 const homepageButton = tabContainer.appendChild(document.createElement('div'));
 homepageButton.classList.add('button')
 homepageButton.innerHTML = 'Home Page'
+homepageButton.id = 'home-page-button';
 
 const listButton = tabContainer.appendChild(document.createElement('div'));
 listButton.classList.add('button')
 listButton.innerHTML = 'List'
-
+listButton.id = 'list-button';
 }
