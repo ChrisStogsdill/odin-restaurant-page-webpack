@@ -116,7 +116,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _mainPage_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./mainPage.js */ \"./src/mainPage.js\");\n/* harmony import */ var _tabs_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./tabs.js */ \"./src/tabs.js\");\n\r\n\r\n\r\nconst content = document.getElementById('content');\r\n\r\n\r\n\r\n(0,_tabs_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])()\r\n;(0,_mainPage_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])()\r\n\r\n\r\nconsole.log('test');\n\n//# sourceURL=webpack://odin-restaurant-page-webpack/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _mainPage_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./mainPage.js */ \"./src/mainPage.js\");\n/* harmony import */ var _tabs_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./tabs.js */ \"./src/tabs.js\");\n\r\n\r\n\r\n\r\nconst content = document.getElementById('content');\r\n\r\n\r\n\r\n(0,_tabs_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])()\r\n;(0,_mainPage_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])()\r\n\r\nconst listButton = document.getElementById('list-button');\r\nconst homePageButton = document.getElementById('home-page-button');\r\nconst mainPage = document.getElementById('home-page');\r\n\r\n\r\nlistButton.addEventListener('click', () => {\r\n    mainPage.classList.add('display-none')\r\n})\r\n\r\nhomePageButton.addEventListener('click', () => {\r\n    mainPage.classList.remove('display-none')\r\n})\r\n\r\n\n\n//# sourceURL=webpack://odin-restaurant-page-webpack/./src/index.js?");
 
 /***/ }),
 
@@ -136,7 +136,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createTabs)\n/* harmony export */ });\nfunction createTabs() {\r\nconst content = document.getElementById('content');\r\nconst tabContainer = content.appendChild(document.createElement('div'));\r\ntabContainer.classList.add('display-flex')\r\ntabContainer.id = 'tab-container'\r\n\r\n\r\nconst homepageButton = tabContainer.appendChild(document.createElement('div'));\r\nhomepageButton.classList.add('button')\r\nhomepageButton.innerHTML = 'Home Page'\r\n\r\nconst listButton = tabContainer.appendChild(document.createElement('div'));\r\nlistButton.classList.add('button')\r\nlistButton.innerHTML = 'List'\r\n\r\n}\n\n//# sourceURL=webpack://odin-restaurant-page-webpack/./src/tabs.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createTabs)\n/* harmony export */ });\nfunction createTabs() {\r\nconst content = document.getElementById('content');\r\nconst tabContainer = content.appendChild(document.createElement('div'));\r\ntabContainer.classList.add('display-flex')\r\ntabContainer.id = 'tab-container'\r\n\r\n\r\nconst homepageButton = tabContainer.appendChild(document.createElement('div'));\r\nhomepageButton.classList.add('button')\r\nhomepageButton.innerHTML = 'Home Page'\r\nhomepageButton.id = 'home-page-button';\r\n\r\nconst listButton = tabContainer.appendChild(document.createElement('div'));\r\nlistButton.classList.add('button')\r\nlistButton.innerHTML = 'List'\r\nlistButton.id = 'list-button';\r\n}\n\n//# sourceURL=webpack://odin-restaurant-page-webpack/./src/tabs.js?");
 
 /***/ }),
 
@@ -254,8 +254,7 @@ eval("module.exports = __webpack_require__.p + \"ff220f59071604222741.png\";\n\n
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	__webpack_require__("./src/index.js");
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/mainPage.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
 /******/ 	
 /******/ })()
 ;
