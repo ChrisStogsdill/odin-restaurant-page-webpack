@@ -1,0 +1,42 @@
+#content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #DDF8E8;
+
+}
+
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block ;
+}
+
+.display-flex {
+    display: flex;
+}
+
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 1.5em;
+    background-color: #615055;
+    color: whitesmoke;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.button:active {
+    transform: scale(0.9);
+    filter: brightness(85%);
+}
+
+.honeydew {
+    background-color: #DDF8E8;
+}
